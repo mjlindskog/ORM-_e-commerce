@@ -30,17 +30,21 @@ _If no package.json file is present, type the command:_ `npm init -y` _then:_ `n
 
 Make sure MySQL is installed and enter the sql shell and run the command: `source db/schema.sql`
 
+![Screenshot of mysql command line adding database](./img/mysql.png)
+
 Exit the sql shell and run command:
 
 `npm run seed` or `node seeds/index.js`
 
-then:
+![Screenshot of command line seeding database](./img/db-seed.png)
+
+Then:
 
 `npm start` or `node server.js`
 
-![Screenshot of command line starting server ](./img/)
-
 **Below is video demonstrating the start up process and routes being tested in Insomnia Core:**
+
+https://drive.google.com/file/d/1kaFApNCiDofmTd8P1qBojlPTC-LV5abE/view?usp=sharing
 
 ## Credits
 
