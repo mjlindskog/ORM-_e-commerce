@@ -79,7 +79,7 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
-  Category.destroy({Where: {id:req.params.id}  })
+  Category.destroy({where: {id:req.params.id}  })
   .then(CategoryData => {
     if(!CategoryData) {
       res.status(404).json({message: 'Could not locate that Tag in databse' });

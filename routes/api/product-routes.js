@@ -122,7 +122,7 @@ router.put('/:id', (req, res) => {
     .then((updatedProductTags) => res.json(updatedProductTags))
     .catch((err) => {
       // console.log(err);
-      res.status(400).json(err);
+      // res.status(500).json(err);
     });
 });
 
@@ -134,7 +134,7 @@ router.delete('/:id', (req, res) => {
       res.status(404).json({message: 'Could not locate that Product in database.'});
       return;
     }
-    res.join(ProductData);
+    res.json(ProductData);
   })
   .catch(err => {
     console.log(err);
